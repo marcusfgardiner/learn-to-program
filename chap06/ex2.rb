@@ -1,7 +1,9 @@
-line_width = 30
+left = 30
+center = 50
+right = 20
 
-puts ("Table of contents".center(line_width))
-puts ("".center(line_width))
-puts ("Chapter 1: Getting Started".ljust(line_width) + "page 1".rjust(line_width))
-puts ("Chapter 2: Numbers".ljust(line_width) + "page 9".rjust(line_width))
-puts ("Chapter 3: Letters".ljust(line_width) + "page 13".rjust(line_width))
+puts ("Table of contents".center(center))
+puts 
+puts ("Chapter 1: Getting Started".ljust(left) + "page 1".rjust(right))
+puts ("Chapter 2: Numbers".ljust(left) + "page 9".rjust(right))
+puts ("Chapter 3: Letters".ljust(left) + "page 13".rjust(right))
