@@ -1,6 +1,6 @@
 require 'yaml' # Told you it was easy.
 test_array = [42,
-'Mutants Out!',
+'Mutants Out yeah!',
 true, "true"]
 # Here's half of the magic:
 test_string = test_array.to_yaml

@@ -9,21 +9,27 @@ class Array
         
         while array_copy.length > 0
         
+        #take a random index, this is the item that will get pushed next into the shuffled array
         random_index = rand(array_copy.length)
         
         current_index = 0
         new_arr = []
         
+        # Split items in array into one of two arrays - the shuffle array (where the 1 chosen item goes each time) or the new_array for the remainder of the items
+        # These remaining items are whats fed back in as the current array_copy (minues the item that went to the shuffled array)
         array_copy.each { |item|
             if current_index == random_index
+                # push the chosen random item into the shuffled array (only 1 item goes into this shuffle array for each run of while)
                 shuffled_array.push item
             else
+                # new array is everthing but that 1 item that is now in the shuffled array
                 new_arr.push item
             end
             
             current_index = current_index + 1
         }
         
+        # feed new array back into the top of the while, now with 1 item taken away that has gone into shuffled array
         array_copy = new_arr
         end
         
