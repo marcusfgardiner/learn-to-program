@@ -1,6 +1,7 @@
 def profile block_description, &block
     
     #can turn profling of code on and off by just changing this one word of code
+    # in this instance - it keeps track of the amount of time it takes the code block to run
     profiling_switch = false
     
     if profiling_switch = true
@@ -11,6 +12,8 @@ def profile block_description, &block
     else
         #if profiling off, still call the block of code, just don't need to do the profiling aspect
         # therefore don't have to edit all code below that already includes profiling, just the profiling switch at the top!
+        
+    # then call the block of code to run (the piece within do and end below)
         block.call
 end
 

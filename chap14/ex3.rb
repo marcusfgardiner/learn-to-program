@@ -1,3 +1,6 @@
+# Code to automatically indent your code based on how many code blocks run e.g. first code block - 0 indentation, second code block - 1 indentation. etc
+# works by feeding in &block code into a method (similar to using a proc)
+
 $nesting_depth = 0
 
 def log string_description, &block

@@ -1,3 +1,5 @@
+# Key for adding these methods into classes (so can use .method), is using the SELF variable
+
 #shuffle method into array class
 
 class Array

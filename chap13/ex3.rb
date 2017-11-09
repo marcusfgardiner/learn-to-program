@@ -1,5 +1,7 @@
 #interactive baby dragon
 
+# @ instance variable is an instance of that class variable (used in defining classes and having variable values by pulled across methods in this class etc)
+
 class Dragon
     
     def initialize name
@@ -110,6 +112,7 @@ class Dragon
 end
 
 #---------------------------------
+# user interaction so this new class works as an active program when you execute the file
 
 
 puts "What would you like to call your baby dragon?"
